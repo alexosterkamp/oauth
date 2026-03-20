@@ -141,12 +141,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SOCIALACCOUNT_PROVIDERS = {
-    'github': {
-        'APP': {
-            'client_id': 'your-github-client-id',
-            'client_secret': 'your-github-client-secret',
-            'redirect_uri': 'http://localhost:8000/accounts/github/login/callback/'
-        }
-    }
+    'github': {}
 }
 
+LOGIN_REDIRECT_URL = '/members/'
